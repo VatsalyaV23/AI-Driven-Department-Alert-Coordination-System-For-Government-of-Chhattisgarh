@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #13ecc8;
+  --secondary-color: #e0fdf8;
+  --background-color: #f8fcfb;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4d4d4d;
+  --accent-color: #0fd9b7;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  font-family: "Inter", "Noto Sans", sans-serif;
+  color: var(--text-primary);
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 32rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logoRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.login-logo {
+  height: 6rem;
+  object-fit: contain;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.login-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #f8fcfb;
+  border: 1px solid #cfe7e3;
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input::placeholder {
+  color: #4c9a8d;
+}
+
+.formGroup input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(15, 217, 183, 0.3);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+  color: #0d1b19;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-login:hover {
+  background: var(--accent-color);
+}
+
+.login-error {
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.6rem;
+}
+
+.login-link {
+  font-weight: 600;
+  color: #137fec; /* 🔹 Blue links */
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

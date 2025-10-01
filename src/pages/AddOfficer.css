@@ -1,0 +1,178 @@
+.add-officer-root {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(19,127,236,0.15);
+  border: 2px solid #e0effc;
+  padding: 26px 30px;
+  max-width: 600px;
+  margin: 18px auto;
+  color: var(--text-primary);
+}
+
+.form-title {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.officer-form .form-row {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.officer-form label {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.officer-form input {
+  padding: 10px 12px;
+  border-radius: 7px;
+  border: 1px solid #d0d7e2;
+  background: #fff;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.form-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-actions button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.form-actions button:hover {
+  background: #0a60c0;
+  transform: scale(1.02);
+}
+
+.form-message {
+  margin-top: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Officers Table */
+.officers-table-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(19,127,236,0.15);
+  padding: 20px;
+}
+
+.officers-table-wrapper h2 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.officers-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.officers-table th,
+.officers-table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.officers-table thead {
+  background-color: #f0f6ff;
+  font-weight: 700;
+}
+
+.officers-table tbody tr:nth-child(even) {
+  background-color: #fafcff;
+}
+
+.officers-table tbody tr:hover {
+  background-color: #eef6ff;
+  transition: background 0.2s;
+}
+
+.status.verified {
+  color: green;
+  font-weight: 700;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: 700;
+}
+.otp-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f9fbff;
+  border: 2px solid #137fec;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.otp-section h2 {
+  color: #137fec;
+  margin-bottom: 0.5rem;
+}
+
+.otp-instructions {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.otp-form input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.otp-form button {
+  background: #137fec;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.otp-form button:disabled {
+  background: #9bbff8;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

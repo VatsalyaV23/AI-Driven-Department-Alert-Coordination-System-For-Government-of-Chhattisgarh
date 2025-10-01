@@ -1,0 +1,143 @@
+/* Modal background */
+.profile-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Modal content box */
+.profile-modal-content {
+  background: #fff;
+  padding: 24px 22px 20px; /* more top padding */
+  border-radius: 14px;
+  position: relative;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Close button */
+.profile-modal-close {
+  position: absolute;
+  top: 14px;   /* pushed slightly down */
+  right: 16px; /* aligned with box edge */
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+}
+
+.profile-modal-close:hover {
+  color: #e63946;
+}
+
+/* Heading */
+.profile-modal-content h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  color: #222;
+  padding-right: 28px; /* avoid overlap with close button */
+}
+
+/* Labels */
+.profile-modal-content label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #1a202c;
+  font-size: 0.92rem;
+}
+
+/* Inputs */
+.profile-modal-content input {
+  width: 100%;
+  padding: 10px 12px; /* reduced padding */
+  font-size: 1rem;
+  border-radius: 9px;
+  border: 1.4px solid #e6eef2;
+  background: #f6fbf9;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  box-sizing: border-box;
+}
+
+.profile-modal-content input:focus {
+  border-color: #137fec;
+  box-shadow: 0 0 0 2px rgba(19, 127, 236, 0.2);
+}
+
+/* Submit button */
+.profile-modal-content button[type="submit"] {
+  width: 100%;
+  padding: 11px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #137fec;
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 8px rgba(19, 127, 236, 0.18);
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  transition: background 0.2s ease-in-out;
+}
+
+.profile-modal-content button[type="submit"]:hover {
+  background: #0a60c0;
+}
+
+/* Messages */
+.profile-modal-message {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profile-modal-message.error {
+  color: #dc3545;
+}
+
+.profile-modal-message.success {
+  color: #28a745;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .profile-modal-content {
+    padding: 20px 16px;
+    width: 92vw;
+    max-width: 92vw;
+  }
+
+  .profile-modal-close {
+    font-size: 28px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

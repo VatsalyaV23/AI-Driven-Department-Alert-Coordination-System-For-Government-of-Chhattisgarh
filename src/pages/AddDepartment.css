@@ -1,0 +1,126 @@
+.add-department-root {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.form-card {
+  background: #fff;
+  max-width: 600px;
+  margin: 36px auto 0 auto;
+  padding: 36px 42px;
+  border-radius: 14px;
+  box-shadow: 0 3px 18px rgba(0,0,0,0.09);
+}
+.form-card h1 {
+  font-size: 2.2rem;
+  color: #137fec;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.department-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.form-row {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+}
+.form-row.full {
+  flex: 1 1 100%;
+}
+.department-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a202c;
+}
+.department-form input, .department-form textarea {
+  padding: 11px 14px;
+  border-radius: 7px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background: #f8faff;
+}
+.department-form textarea { resize: vertical; }
+.form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.form-actions button {
+  background: #137fec;
+  color: #fff;
+  border: none;
+  padding: 12px 34px;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.19s;
+}
+.form-actions button:hover { background: #0a60b8; }
+.form-message {
+  margin-top: 12px;
+  color: #28a745;
+  font-weight: 600;
+  text-align: right;
+}
+
+.department-table-wrapper {
+  max-width: 1100px;
+  margin: 36px auto 0 auto;
+  background: transparent;
+  padding-bottom: 48px;
+}
+.department-table {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 3px 16px rgba(19,127,236,0.06);
+  margin-top: 22px;
+  background: #fff;
+}
+.department-table th, .department-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.department-table th {
+  background: #f6fafd;
+  color: #137fec;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-top: none;
+}
+.department-table td {
+  color: #222;
+  font-size: 0.97rem;
+}
+.department-table tr:nth-child(even) {
+  background: #f8faff;
+}
+.department-table tr:last-child td {
+  border-bottom: none;
+}
+.department-table td:last-child, .department-table th:last-child {
+  border-radius: 0 0 12px 12px;
+}
+.department-table td:first-child, .department-table th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+.form-row.two-cols {
+  display: flex;
+  gap: 16px; /* space between fields */
+}
+
+.form-row.two-cols > div {
+  flex: 1; /* make both inputs equal width */
+  display: flex;
+  flex-direction: column;
+}
